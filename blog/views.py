@@ -36,4 +36,4 @@ def add_blog(request):
 
 #首页视图
 class IndexView(View):
-    
+
