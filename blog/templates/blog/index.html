@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>biaoge</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .top_nav{
+            width: 100%;
+            height: 45px;
+            border-bottom: 1px solid gray;
+            text-align: center;
+            line-height: 45px;
+        }
+        .top_left{
+            width: 200px;
+            height: 100%;
+            text-align: center;
+            margin-left: 50%;
+            float: left;
+        }
+        .top_right{
+            width: 200px;
+            height: 100%;
+            text-align: center;
+            float: left;
+        }
+        .table{
+            width: 700px;
+            height: 700px;
+            margin: 45px auto;
+        }
+        .top{
+            width: 100%;
+            height: 45px;
+            border: 1px solid gray;
+            text-align: center;
+            line-height: 45px;
+        }
+        .left{
+            width: 300px;
+            height: 45px;
+            border: 1px solid gray;
+            float: left;
+            text-align: center;
+            line-height: 45px;
+        }
+        .right{
+            width: 396px;
+            height: 45px;
+            border: 1px solid gray;
+            float: right;
+            text-align: center;
+            line-height: 45px;
+        }
+    </style>
+</head>
+<body>
+<div class="top_nav">
+    <div class="top_left">
+        <div>welcome</div>
+    </div>
+    <div class="top_right">
+        <a href="logout.jsp">注销</a>
+    </div>
+</div>
+<div class="table">
+    <div class="top">学生个人信息表</div>
+    <div  >
+        <div class="left"  name="color" >姓名</div>
+        <div class="right" >${stu.name}</div>
+    </div>
+
+    <div >
+        <div class="left"  name="color">班级</div>
+        <div class="right" ></div>
+    </div>
+    <div>
+        <div class="left" name="color">学号</div>
+        <div class="right"></div>
+    </div>
+    <div>
+        <div class="left" name="color">性别</div>
+        <div class="right"></div>
+    </div>
+    <div>
+        <div class="left" name="color">专业</div>
+        <div class="right"></div>
+    </div>
+    <div>
+        <div class="left" name="color">学院</div>
+        <div class="right"></div>
+    </div>
+    <div>
+        <div class="left" name="color">学校</div>
+        <div class="right" ></div>
+    </div>
+</div>
+</body>
+<script>
+  color = document.getElementsByName("color");
+  for(var i = 0;i < color.length;i++){
+      if(i % 2 ==0 )
+      color[i].style.backgroundColor = 'blue';
+  }
+
+</script>
+</html>
